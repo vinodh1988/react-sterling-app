@@ -11,6 +11,16 @@ const App=()=>{
     <div className="root">
            <h1>First React App</h1>
            <hr/>
+             Add an Item <input type="text"/> <br/>
+             Type <select>
+               <option value="vegetables">Vegetables</option>
+               <option value="fruits">Fruits</option>
+               <option value="spices">Spices</option>
+               <option value="electronics">Electronics</option>
+             </select>
+             <br/><br/>
+             <button type="button">Add item</button>
+           <hr/>
            <Box title="Vegetables" items={vegetables}/>
            <Box title="Fruits" items={fruits}/>
            <Box title="Spices" items={spices}/>
