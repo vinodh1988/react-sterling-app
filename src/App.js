@@ -6,10 +6,10 @@ const App=()=>{
     <div className="root">
            <h1>First React App</h1>
            <hr/>
-           <Box/>
-           <Box/>
-           <Box/>
-           <Box/>
+           <Box title="Vegetables"/>
+           <Box title="Fruits"/>
+           <Box title="Spices"/>
+           <Box title="Electronics"/>
     </div>
   )
 }
