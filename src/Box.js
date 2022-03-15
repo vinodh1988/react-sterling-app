@@ -4,7 +4,7 @@ const Box=({title,items})=>{
                   <h3>{title}</h3>
                   <hr/>
                   <ul>
-                      {items.map(x=><li>{x}</li>)}
+                      {items.map(x=><li key={x}>{x}</li>)}
                   </ul>
         </div>
     )
