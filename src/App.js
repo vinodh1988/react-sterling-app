@@ -1,15 +1,20 @@
+import { useState } from 'react'
 import './App.css'
 import Box from './Box'
 
 const App=()=>{
+  const [vegetables,setVegetables]=useState(['Potato','Tomato','Onion'])
+  const [fruits,setFruits]=useState(["Apple","Grapes","Banana"])
+  const [spices,setSpices]=useState(['Cinnamon','Pepper','Cloves'])
+  const [electronics,setElectronics]=useState(['Mobile','Disk','Main Memory'])
   return (
     <div className="root">
            <h1>First React App</h1>
            <hr/>
-           <Box title="Vegetables"/>
-           <Box title="Fruits"/>
-           <Box title="Spices"/>
-           <Box title="Electronics"/>
+           <Box title="Vegetables" items={vegetables}/>
+           <Box title="Fruits" items={fruits}/>
+           <Box title="Spices" items={spices}/>
+           <Box title="Electronics" items={electronics}/>
     </div>
   )
 }
